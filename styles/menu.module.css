@@ -1,0 +1,33 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap : 2rem
+
+}
+
+.link{
+    color: var(--themeColorDark);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link:hover{
+    border-bottom: 1px solid var(--themeColorDark);
+    transform: scale(1.1);
+    font-weight: bold;
+
+}

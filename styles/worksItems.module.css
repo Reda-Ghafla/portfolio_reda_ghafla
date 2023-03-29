@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+    height: 250px;
+  width: 100%;
+  border: 0.25rem solid var(--clr-gold);
+  border-radius: var(--radius);
+  position : relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  /* background: #000; */
+}
+
+.article{
+    
+}

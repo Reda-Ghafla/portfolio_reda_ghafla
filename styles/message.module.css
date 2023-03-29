@@ -1,0 +1,14 @@
+.message {
+  background: var(--themeColorDark);
+  padding: 0.5rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  transition: all 1s ease;
+}
+
+.content {
+  color: var(--themeColorYellow);
+  font-size: 1.2rem;
+  font-bold: weight;
+  transition: all 1s ease;
+}

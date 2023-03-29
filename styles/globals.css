@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --themeColorDark: #04080f;
+  --themeColorYellow: #fcba04;
+  --themeColorWhite: #fafaff;
+  --themeColorSecond: #d9e0e1;
+  --themeColorThird: #617073;
+  --boxShadow: 13px 5px 24px -1px rgba(4, 8, 15, 0.56);
+  --borderRadius: 2rem;
+  --fontSizeHeading: 2.5rem;
+  --fontSizeParagraph: 1.2rem;
+}
+
+::-moz-selection {
+  color: var(--themeColorYellow);
+  background: var(--themeColorDark);
+}
+
+::selection {
+  color: var(--themeColorYellow);
+  background: var(--themeColorDark);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--themeColorYellow);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--themeColorDark);
+  border-radius: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background: var(--themeColorDark);
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px 50px 15px 50px;
+  border: 0;
+  border-radius: 40px;
+  text-transform: capitalize;
+  --webkit-backface-visibility: hidden;
+  position: relative;
+  font-size: 1.0666666667rem;
+  cursor: pointer;
+  margin-right: 1.2rem;
+  transition: all 0.2s ease-in-out;
+  width: 13rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+
+  width: 15rem;
+  border: 1px solid var(--themeColorDark);
+}
+
+/* @media screen and (max-width : 768px){
+  .btn{
+    padding: 10px 15px 10px 15px;
+    width : 9rem;
+    font-size : 0.85rem
+  }
+} */
+
+.image {
+  background-color: var(--themeColorDark);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
