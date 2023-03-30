@@ -57,12 +57,21 @@ export default function Home({ result, resultT }) {
   );
 }
 
-export async function getStaticProps() {
-  const response = await fetch('http://localhost:3000/api/works');
-  const result = await response.json();
-
+const getTestimonials = async () => {
   const responseT = await fetch('http://localhost:3000/api/testimonials');
   const resultT = await responseT.json();
+
+  return resultT;
+};
+
+const getWorks = async () => {
+  const response = await fetch('http://localhost:3000/api/works');
+  const result = await response.json();
+  return result;
+};
+export async function getStaticProps() {
+  const result = await getWorks();
+  const resultT = await getTestimonials();
 
   return {
     props: {
